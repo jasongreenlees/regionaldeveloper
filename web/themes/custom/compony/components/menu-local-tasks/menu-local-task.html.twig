@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Theme override for a local task link.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper element.
+ * - is_active: Whether the task item is an active tab.
+ * - link: A rendered link element.
+ *
+ * Note: This template renders the content for each task item in
+ * menu-local-tasks.html.twig.
+ *
+ * @see template_preprocess_menu_local_task()
+ */
+#}
+
+{% if is_active %}
+  {% set attributes = attributes.addClass('tabs__tab--active') %}
+{% else %}
+  {% set attributes = attributes.addClass('tabs__tab--inactive') %}
+{% endif %}
+
+<li{{ attributes.addClass('tabs__tab') }}>
+  <a href="{{ link['#url'] }}" {% if is_active %}class="is_active"{% endif %}>
+    <span class="link__inner">{{ link['#title'] }}</span>
+  </a>
+
+  {% if is_active %}
+    <div class="icon">
+      <svg viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.392L0 0h12z" fill="#4C4C4C" fill-rule="evenodd"/></svg>
+    </div>
+  {% endif %}
+</li>

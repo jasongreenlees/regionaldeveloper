@@ -1,0 +1,11 @@
+menu-local-tasks:
+  version: VERSION
+  css:
+    component:
+      dist/menu-local-tasks.css: {}
+  js:
+    dist/menu-local-tasks.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupal.ajax

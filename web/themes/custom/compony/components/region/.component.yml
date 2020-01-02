@@ -1,0 +1,31 @@
+component:
+  name: Region
+  folder_name: region
+  details: 'https://www.compony.io/component/region'
+  downloaded_on: 11-29-2019
+  built_upon:
+    project: Drupal
+    version: '8'
+    specific:
+      type: core
+      link: false
+  repository:
+    details: 'https://gitlab.com/componies/flat-design/Core/region'
+    gitlab_project_id: '7538185'
+    version: 'https://gitlab.com/componies/flat-design/Core/region/commit/0cfddf969213e0071f4f5f01655919c5cd581417'
+    version_sha: 0cfddf969213e0071f4f5f01655919c5cd581417
+    version_sha_short: 0cfddf96
+    diff_with_latest_version: 'https://gitlab.com/componies/flat-design/Core/region/compare/0cfddf969213e0071f4f5f01655919c5cd581417...master'
+    clone_this_version: 'git clone https://gitlab.com/componies/flat-design/Core/region.git region && cd region && git checkout 0cfddf969213e0071f4f5f01655919c5cd581417'
+  contributors:
+    1:
+      name: Compony
+      details: 'https://www.compony.io/user/1'
+collection:
+  name: 'Bare essentials'
+  details: 'https://www.compony.io/collection/bare-essentials'
+  contributors:
+    1:
+      name: Compony
+      details: 'https://www.compony.io/user/1'
+supported_by: no-one

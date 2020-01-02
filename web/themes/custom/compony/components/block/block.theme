@@ -1,0 +1,15 @@
+<?php
+
+/*
+ * Implements template_preprocess_hook().
+ */
+function compony_preprocess_block(&$variables, $hook) {
+  // Create the possibility to use more specific preprocess function for more specific blocks.
+  if (isset($variables['plugin_id'])) {
+    $plugin_id = str_replace(":", "_", $variables['plugin_id']);
+    $function = __FUNCTION__ . '__' . $plugin_id;
+    if (function_exists($function)) {
+      $function($variables, $hook);
+    }
+  }
+}

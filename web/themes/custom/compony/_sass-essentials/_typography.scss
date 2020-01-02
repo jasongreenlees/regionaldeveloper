@@ -1,0 +1,13 @@
+//
+// Naming convention for variables is:
+// $[first-letter of css-property][second-letter of css-property]-[name-used-by-design|easy-name-to-remember]"
+//
+// So for font-family:
+// $ff-condensed: 'Roboto Condensed', Geneva, Tahoma, sans-serif;
+// $ff-normal: 'Roboto', Helvetica, Arial, sans-serif;
+//
+// For font-weight variables:
+// $fw-thin: 100;
+// $fw-light: 300;
+// $fw-regular: 400;
+// $fw-bold: 700;

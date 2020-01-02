@@ -1,0 +1,5 @@
+wysiwyg-content:
+  version: VERSION
+  css:
+    component:
+      dist/wysiwyg-content.css: {}

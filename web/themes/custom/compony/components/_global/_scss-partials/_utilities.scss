@@ -1,0 +1,43 @@
+// Visually hidden on the screen but avaiable to screenreaders
+.accessibly-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  padding: 0;
+  left: -10000px;
+}
+
+
+// both visually hidden not not avaiable to screenreaders
+.u-hidden {
+  display: none;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-grey {
+  color: gray;
+}
+
+.text-thin {
+  font-weight: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.link--simple {
+  text-decoration: none;
+}

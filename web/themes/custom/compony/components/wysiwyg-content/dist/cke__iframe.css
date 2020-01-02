@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/*
+ * This file is imported in the backend,
+ * to be used to theme the input for the wysiwyg-editor.
+ *
+ * In order for this to be used, we need to link it from theme.info.yml,
+ * by defining there:
+ * ckeditor_stylesheets:
+ *   - components/wysiwyg-content/dist/wysiwyg-content.css
+ *
+ * See https://www.drupal.org/docs/8/api/ckeditor-api/overview for more details
+ */
+/* Animation definitions */
+.wysiwyg-content, .cke_editable {
+  font-family: inherit;
+  max-width: 700px;
+  margin: 0 auto;
+  word-break: break-word;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+.wysiwyg-content *:last-child, .cke_editable *:last-child {
+  margin-bottom: 0;
+}
+
+.wysiwyg-content h2, .cke_editable h2,
+.wysiwyg-content h3,
+.cke_editable h3 {
+  font-family: inherit;
+  margin-top: 50px;
+}
+
+.wysiwyg-content h2:first-child, .cke_editable h2:first-child,
+.wysiwyg-content h3:first-child,
+.cke_editable h3:first-child {
+  margin-top: 0;
+}
+
+.wysiwyg-content p, .cke_editable p {
+  margin-top: 0;
+  max-width: 650px;
+}
+
+.wysiwyg-content ol, .cke_editable ol, .wysiwyg-content ul, .cke_editable ul {
+  margin-bottom: 30px;
+}
+
+.wysiwyg-content ol, .cke_editable ol {
+  counter-reset: item;
+}
+
+.wysiwyg-content ol li, .cke_editable ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+  margin-left: 28px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.wysiwyg-content ol li:before, .cke_editable ol li:before {
+  background-color: #FFF;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  color: #666;
+  content: counter(list) "";
+  left: -34px;
+  position: absolute;
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.wysiwyg-content ul li, .cke_editable ul li {
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.wysiwyg-content ul li:before, .cke_editable ul li:before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 11px;
+  top: 11px;
+  left: 0;
+  background: #666;
+}
+
+.wysiwyg-content blockquote, .cke_editable blockquote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 0;
+  max-width: 650px;
+}
+
+@media (min-width: 500px) {
+  .wysiwyg-content blockquote, .cke_editable blockquote {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.wysiwyg-content blockquote:before, .cke_editable blockquote:before {
+  content: '';
+  display: inline-block;
+  margin: 0 20px 0 auto;
+  background-image: url("citat-ikon.svg");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 57px;
+}
+
+@media (min-width: 500px) {
+  .wysiwyg-content blockquote:before, .cke_editable blockquote:before {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.wysiwyg-content blockquote p, .cke_editable blockquote p {
+  color: #000;
+  font-family: inherit;
+  font-weight: lighter;
+  margin: 0;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+@media (min-width: 500px) {
+  .wysiwyg-content blockquote p, .cke_editable blockquote p {
+    font-size: 38px;
+    line-height: 40px;
+  }
+}
+
+.wysiwyg-content blockquote p:before, .cke_editable blockquote p:before, .wysiwyg-content blockquote p:after, .cke_editable blockquote p:after {
+  content: '”';
+}
+
+.wysiwyg-content img, .cke_editable img,
+.wysiwyg-content .video-embed-field-responsive-video,
+.cke_editable .video-embed-field-responsive-video {
+  margin: 30px 0;
+}
+
+.wysiwyg-content figure, .cke_editable figure {
+  margin: 30px 0;
+}
+
+.wysiwyg-content figure img, .cke_editable figure img {
+  margin: 0;
+}
+
+.wysiwyg-content .align-center, .cke_editable .align-center {
+  max-width: 80%;
+  margin: 30px auto;
+}
+
+.wysiwyg-content .align-right, .cke_editable .align-right,
+.wysiwyg-content .align-left,
+.cke_editable .align-left {
+  max-width: 50%;
+  height: auto;
+}
+
+
+.wysiwyg-content .align-left,
+.cke_editable .align-left {
+  margin: 20px 30px 20px 0;
+}
+
+.wysiwyg-content .align-right, .cke_editable .align-right {
+  margin: 20px 0 20px 30px;
+}
+
+.wysiwyg-content table, .cke_editable table {
+  border-spacing: 0;
+  max-width: 100%;
+  max-width: calc((100% + ((100vw - 100%) / 2)));
+  display: inline-block;
+  overflow: auto;
+  margin: 0 0 1em;
+}
+
+.wysiwyg-content table caption, .cke_editable table caption {
+  background-color: #fafafa;
+  font-weight: bold;
+  padding: 10px 0 0;
+  font-size: 22px;
+}
+
+.wysiwyg-content table thead, .cke_editable table thead {
+  background-color: #fafafa;
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.wysiwyg-content table th, .cke_editable table th {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.wysiwyg-content table tbody th, .cke_editable table tbody th, .wysiwyg-content table tbody td, .cke_editable table tbody td {
+  word-break: normal;
+  padding: 10px;
+  position: relative;
+}
+
+.cke_editable.wysiwyg-content, .cke_editable {
+  max-width: 100%;
+}
+
+body {
+  padding: 20px;
+}

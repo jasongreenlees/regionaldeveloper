@@ -1,0 +1,29 @@
+
+
+@font-face {
+    font-family: 'FreightSansMedium';
+    src: url('fonts/Freight-Sans-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightTextMedium';
+    src: url('fonts/Freight-Text-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightTextBold';
+    src: url('fonts/Freight-Text-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreightTextBook';
+    src: url('fonts/Freight-Text-Book') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

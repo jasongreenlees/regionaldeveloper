@@ -1,0 +1,5 @@
+status-messages:
+  version: VERSION
+  css:
+    component:
+      dist/status-messages.css: {}

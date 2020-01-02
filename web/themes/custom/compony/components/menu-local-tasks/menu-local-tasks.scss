@@ -1,0 +1,106 @@
+@import "sass-essentials";
+
+$bp-tabs: 700px;
+.tabs {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  max-width: 100%;
+  width: 940px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  @media all and (min-width: $bp-tabs) {
+    margin-bottom: 0;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    @media all and (min-width: $bp-tabs) {
+      overflow: hidden;
+      flex-direction: row;
+    }
+  }
+}
+
+.tabs__tab {
+  display: flex;
+  position: relative;
+  flex: 0 1 auto;
+  margin-right: 10px;
+  order: 1;
+  @media all and (min-width: $bp-tabs) {
+    order: 0;
+  }
+  a {
+    transition: all 0.2s ease;
+    width: 100%;
+    background: #E9E9E9;
+    color: #4C4C4C;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    @media all and (min-width: $bp-tabs) {
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      margin: 0;
+      justify-content: center;
+    }
+    &:hover,
+    &:focus {
+      color: #4C4C4C;
+      background: #CCC;
+    }
+  }
+  .icon {
+    pointer-events: none;
+    svg {
+      position: absolute;
+      display: block;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%) rotate(0deg);
+      width: 10px;
+      transition: all 0.2s ease;
+      @media all and (min-width: $bp-tabs) {
+        display: none;
+      }
+      .js-expanded & {
+        transform: translateY(-50%) rotate(60deg);
+      }
+    }
+  }
+}
+
+.tabs__tab--inactive {
+  a {
+    position: absolute;
+    top: -999em;
+    @media all and (min-width: $bp-tabs) {
+      position: relative;
+      top: auto;
+    }
+    .js-expanded & {
+      position: relative;
+      top: auto;
+    }
+  }
+  + .tabs__tab--inactive {
+    @media all and (min-width: $bp-tabs) {
+      margin-left: 1px;
+    }
+  }
+}
+
+.tabs__tab--active {
+  order: 0;
+  a {
+    background: #BBB;
+    &:hover,
+    &:focus {
+      background: #BBB;
+    }
+  }
+}

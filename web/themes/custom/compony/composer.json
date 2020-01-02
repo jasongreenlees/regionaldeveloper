@@ -1,0 +1,8 @@
+{
+    "name": "drupal/compony",
+    "description": "Compony, the kickstart theme.",
+    "type": "drupal-theme",
+    "license": "proprietary",
+    "homepage": "https://gitlab.com/Compony/Compony",
+    "minimum-stability": "dev"
+}

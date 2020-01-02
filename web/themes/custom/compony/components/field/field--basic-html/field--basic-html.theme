@@ -1,0 +1,6 @@
+<?php
+
+function compony_preprocess_field__basic_html(&$variables, $hook) {
+  $variables['#attached']['library'][] = 'compony/wysiwyg-content';
+  $variables['attributes']['class'][] = 'wysiwyg-content';
+}

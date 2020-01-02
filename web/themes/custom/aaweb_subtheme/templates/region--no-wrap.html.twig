@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+
+NOTE FROM JSG
+Classess below defineds the container element so we can use flexbox boostrap 4
+#}
+
+{%
+  set classes = [
+    'region',
+    'container',
+    'region-' ~ region|clean_class,
+  ]
+%}
+{% if content %}
+  <section{{ attributes.addClass(classes) }}>
+    {{ content }}
+  </section>
+{% endif %}

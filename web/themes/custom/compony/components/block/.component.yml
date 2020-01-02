@@ -1,0 +1,31 @@
+component:
+  name: Block
+  folder_name: block
+  details: 'https://www.compony.io/component/block'
+  downloaded_on: 11-29-2019
+  built_upon:
+    project: Drupal
+    version: '8'
+    specific:
+      type: core
+      link: false
+  repository:
+    details: 'https://gitlab.com/componies/flat-design/Core/block'
+    gitlab_project_id: '7315105'
+    version: 'https://gitlab.com/componies/flat-design/Core/block/commit/e3f30b2ed00eefb5d37a8894b7541e19a4c0786a'
+    version_sha: e3f30b2ed00eefb5d37a8894b7541e19a4c0786a
+    version_sha_short: e3f30b2e
+    diff_with_latest_version: 'https://gitlab.com/componies/flat-design/Core/block/compare/e3f30b2ed00eefb5d37a8894b7541e19a4c0786a...master'
+    clone_this_version: 'git clone https://gitlab.com/componies/flat-design/Core/block.git block && cd block && git checkout e3f30b2ed00eefb5d37a8894b7541e19a4c0786a'
+  contributors:
+    1:
+      name: Compony
+      details: 'https://www.compony.io/user/1'
+collection:
+  name: 'Bare essentials'
+  details: 'https://www.compony.io/collection/bare-essentials'
+  contributors:
+    1:
+      name: Compony
+      details: 'https://www.compony.io/user/1'
+supported_by: no-one

@@ -1,0 +1,41 @@
+/********************
+  Custom Site specific classes for specific block layout not to be confused with style etc 
+
+
+  **********************/
+
+.node--type-article .post-content-wrapper .field--name-body {
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+}
+
+@media (max-width: 768px) {
+    .node--type-article .post-content-wrapper .field--name-body {
+        font-size:1.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .node--type-article .post-content-wrapper .field--name-body {
+        width:100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 60px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) { 
+
+}
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) { 
+
+}

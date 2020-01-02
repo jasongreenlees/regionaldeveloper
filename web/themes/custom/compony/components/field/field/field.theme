@@ -1,0 +1,20 @@
+<?php
+
+function compony_preprocess_field(&$variables, $hook) {
+  // Create the possibility to use different preprocess function for field,
+  // Depending on the field formatter, if there is one.
+  if(!empty($variables['element'][0]['#format'])) {
+    $format = $variables['element'][0]['#format'];
+    $function2 = __FUNCTION__ . '__' . $format;
+    if (function_exists($function2)) {
+      $function2($variables, $hook);
+    }
+  }
+
+  // Create the possibility to use different preprocess function for
+  // different field.
+  $function = __FUNCTION__ . '__' . $variables['element']['#field_name'];
+  if (function_exists($function)) {
+    $function($variables, $hook);
+  }
+}

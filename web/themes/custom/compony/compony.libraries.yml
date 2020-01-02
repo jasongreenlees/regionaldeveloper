@@ -1,0 +1,14 @@
+global:
+  version: VERSION
+  css:
+    component:
+      components/_global/dist/style.css: {}
+  js:
+    components/_global/dist/script.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupal.ajax
+
+# There should be no more libraries defines here following the concept that everything
+# is considered a component. Only the assets of the global component should be referenced here.

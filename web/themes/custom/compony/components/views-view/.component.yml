@@ -1,0 +1,31 @@
+component:
+  name: 'Views view'
+  folder_name: views-view
+  details: 'https://www.compony.io/component/views-view'
+  downloaded_on: 11-29-2019
+  built_upon:
+    project: Drupal
+    version: '8'
+    specific:
+      type: core
+      link: false
+  repository:
+    details: 'https://gitlab.com/componies/flat-design/Core/views-view'
+    gitlab_project_id: '7315075'
+    version: 'https://gitlab.com/componies/flat-design/Core/views-view/commit/4754d0eecc4568ce81f13a4f56e12c56f871fd8d'
+    version_sha: 4754d0eecc4568ce81f13a4f56e12c56f871fd8d
+    version_sha_short: 4754d0ee
+    diff_with_latest_version: 'https://gitlab.com/componies/flat-design/Core/views-view/compare/4754d0eecc4568ce81f13a4f56e12c56f871fd8d...master'
+    clone_this_version: 'git clone https://gitlab.com/componies/flat-design/Core/views-view.git views-view && cd views-view && git checkout 4754d0eecc4568ce81f13a4f56e12c56f871fd8d'
+  contributors:
+    1:
+      name: Compony
+      details: 'https://www.compony.io/user/1'
+collection:
+  name: 'Bare essentials'
+  details: 'https://www.compony.io/collection/bare-essentials'
+  contributors:
+    1:
+      name: Compony
+      details: 'https://www.compony.io/user/1'
+supported_by: no-one

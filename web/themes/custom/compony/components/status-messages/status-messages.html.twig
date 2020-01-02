@@ -1,0 +1,28 @@
+{{ attach_library('compony/status-messages') }}
+
+{% set messages_attributes = create_attribute() %}
+
+{%
+  set classes = [
+  'status-messages',
+]
+%}
+
+{% for type, messages in message_list %}
+  <div role="contentinfo" aria-label="{{ status_headings[type] }}"{{ attributes|without('role', 'aria-label') }}>
+    <div{{ messages_attributes.addClass(classes, 'status-messages--' ~ type|clean_class) }} role="alert">
+    {% if status_headings[type] %}
+      <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+    {% endif %}
+    {% if messages|length > 1 %}
+      <ul>
+        {% for drupal_message in messages %}
+          <li>{{ drupal_message }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      {{ messages|first }}
+    {% endif %}
+    </div>
+  </div>
+{% endfor %}
