@@ -41,7 +41,7 @@ OTHER NOTES:
     font-family: Arial,Helvetica,sans-serif;
     letter-spacing: 0em;
     line-height: 1.6em;
-     font-family: FreightTextBook !important; 
+    font-family: FreightSansMedium !important;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -235,7 +235,7 @@ p strong {
 strong {
     font-weight: 900;
     /* font-family: 'futura-bold'; */
-    font-family: 'FreightTextBold'
+    font-family: FreightSansMedium !important;
 }
 
 img.full-width {
@@ -281,7 +281,20 @@ img.quarter-width {
     width: auto;
     height: auto;
 }
-
+.cta-dark {
+    background-color:#151d34;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.cta-dark  p {
+    color:#ffffff;
+    text-align: center;
+}
+div.cta-dark .wrapper {
+    padding: 15px 0px 0px;
+    align-items: center;
+    justify-content: center;
+}
 .feature-box .content {
     border: 1px solid #d4dbde;
     border-radius: 5px;
@@ -291,9 +304,21 @@ img.quarter-width {
     transition: .4s;
     min-height: 350px;
 }
+.one--three-quarter .wrapper  .layout__region--first {
+    flex:1;
+    
+}
+.one-three-quarter .wrapper .layout__region--second {
+    margin-right: 30px;
+    flex:2;
+}
+
 .navbar-brand-flexcontainer {
     /* width: 100%; */
     flex: 1;
+}
+.one-dark {
+    background-color:#f1f1f1;
 }
 .node--type-services .layout--twocol-section .layout__region {
     margin:10px;
@@ -506,20 +531,29 @@ section.region-top-header-form {
     flex:1;
 }
  .layout--twocol-section .wrapper .layout__region--second {
-    flex:2;
+    /* flex:2; */
 }
-.layout--twocol-section--50-50 .wrapper .layout__region--first,
+.layout--twocol-section .wrapper .layout__region--first,
 .layout--twocol-section .wrapper .layout__region--second {
-    flex:1;     
+    /* flex:1; */
  }
  
-.layout--twocol-section--67-33 .wrapper  .layout__region--first {
+.three-one-quarter .wrapper  .layout__region--first {
     flex:2;
     margin-right: 30px;
 }
-.layout--twocol-section--67-33 .wrapper .layout__region--second {
+.three-one-quater .wrapper .layout__region--second {
     flex:1;
 }
+.one--three-quarter .wrapper  .layout__region--first {
+    flex:1;
+    
+}
+.one-three-quater .wrapper .layout__region--second {
+    margin-right: 30px;
+    flex:2;
+}
+
 .layout--threecol-section--43-34-33 h3::after {
     content: '';
     position: absolute;
