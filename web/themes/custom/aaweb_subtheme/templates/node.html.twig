@@ -82,6 +82,7 @@
     {% endif %}
     {{ title_suffix }}
     {% if display_submitted %}
+      <p class="lead">{{ node.field_sub_heading.value }}</p>
       <div class="node__meta">
        {% set imagestyle = {
               '#theme':      'image_style',

@@ -3,17 +3,17 @@
     Drupal.behaviors.aaweb_subtheme_script = {
         attach: function (context, settings) {
             var navbar = $('#navbar-main');
-            var waypoint = new Waypoint({
-                element: document.getElementById('main-content'),
-                handler: function(direction) {
-                    if(direction == 'down') {
-                        navbar.addClass('nav-sticky-solid');
-                    }
-                    else {
-                        navbar.removeClass('nav-sticky-solid');
-                    }
-                }
-            })
+//             var waypoint = new Waypoint({
+//                 element: document.getElementById('main-content'),
+//                 handler: function(direction) {
+//                     if(direction == 'down') {
+//                         navbar.addClass('nav-sticky-solid');
+//                     }
+//                     else {
+//                         navbar.removeClass('nav-sticky-solid');
+//                     }
+//                 }
+//             })
         }
     };
 

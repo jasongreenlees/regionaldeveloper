@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19805f4be6e2f9dc971c1ac8f4e4ad3b",
+    "content-hash": "4972c415f715ac2bdb8eb14ae068f27b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3970,6 +3970,61 @@
             "homepage": "https://www.drupal.org/project/paragraphs",
             "support": {
                 "source": "https://git.drupalcode.org/project/paragraphs"
+            }
+        },
+        {
+            "name": "drupal/parallax_bg",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/parallax_bg.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/parallax_bg-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "1edfa50694377105990d657ae584da9ea8e8a746"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1503645245",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "hatuhay",
+                    "homepage": "https://www.drupal.org/user/827704"
+                },
+                {
+                    "name": "lonalore",
+                    "homepage": "https://www.drupal.org/user/1539304"
+                }
+            ],
+            "description": "Create a Parallax Background effect on any tagged element.",
+            "homepage": "https://www.drupal.org/project/parallax_bg",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/parallax_bg",
+                "issues": "https://www.drupal.org/project/issues/parallax_bg"
             }
         },
         {

@@ -45,6 +45,7 @@
         "drupal/menu_link_attributes": "^1.0",
         "drupal/metatag": "^1.10",
         "drupal/paragraphs": "^1.10",
+        "drupal/parallax_bg": "^1.0",
         "drupal/pathauto": "^1.5",
         "drupal/recaptcha": "^2.4",
         "drupal/views_bootstrap": "^4.1",
