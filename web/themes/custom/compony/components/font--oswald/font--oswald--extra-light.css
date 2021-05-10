@@ -1,8 +1,0 @@
-@font-face {
-  font-family: 'oswald--extra-light';
-  src: url('fonts/oswald-extralight-webfont.woff2') format('woff2'),
-       url('fonts/oswald-extralight-webfont.woff') format('woff'),
-       url('fonts/oswald-extralight-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}

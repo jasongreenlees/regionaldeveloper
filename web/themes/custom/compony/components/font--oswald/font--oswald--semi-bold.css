@@ -1,8 +1,0 @@
-@font-face {
-  font-family: 'oswald--semi-bold';
-  src: url('fonts/oswald-semibold-webfont.woff2') format('woff2'),
-       url('fonts/oswald-semibold-webfont.woff') format('woff'),
-       url('fonts/oswald-semibold-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
